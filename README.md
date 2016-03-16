@@ -19,3 +19,7 @@ Once you've installed node, you can start learning Angular 2 following these ste
 3. Run `npm start`, this will start a simple http server, enable TypeScript compilation on file changes and automagically reload your browser. Wow!!
 4. Start writing Angular 2
 5. Profit
+
+## Useful References
+
+* Check [John Papa's Angular 2 First Look Course](https://app.pluralsight.com/library/courses/angular-2-first-look/table-of-contents) and [Live Code Samples](jpapa.me/a2firstlook)
