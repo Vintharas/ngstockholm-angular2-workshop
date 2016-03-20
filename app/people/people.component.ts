@@ -1,9 +1,11 @@
 import { Component, OnInit } from 'angular2/core';
 import { Person } from './person';
+import { PersonDetailsComponent } from './person-details.component';
 import { StarWarsService } from '../services/starwars.service';
 
 @Component({
   selector: 'people-list',
+  directives: [PersonDetailsComponent],
   template: `
   <!-- this is the new syntax for ng-repeat -->
   <ul *ngFor="#person of people">
@@ -11,15 +13,7 @@ import { StarWarsService } from '../services/starwars.service';
       <a href="#" (click)="selectPerson(person)">{{person.name}}</a>
     </li>
   </ul>
-
-  <!-- new syntax for ng-if -->
-  <section *ngIf="selectedPerson">
-    <h2>You selected: {{selectedPerson.name}}</h2>
-    <h3>Description</h3>
-    <p>
-      {{selectedPerson.name}} weights {{selectedPerson.weight}} and is {{selectedPerson.height}} tall.
-    </p>
-  </section>
+  <person-details [person]="selectedPerson"></person-details>
   `
 })
 export class PeopleComponent implements OnInit{
