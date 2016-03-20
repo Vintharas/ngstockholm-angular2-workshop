@@ -4,8 +4,8 @@ logs
 npm-debug.log*
 
 # Generated code
-app/*.js
-app/*.js.map
+*.js
+*.js.map
 
 # Runtime data
 pids

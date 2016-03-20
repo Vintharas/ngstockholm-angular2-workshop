@@ -1,18 +1,12 @@
-# ngStockholm Workshop Starter!
+# ngStockholm Workshop!
 
-Hi! Welcome to ngStockholm!
-
-We want you to get started writing Angular 2 right away and that's why we have prepared this application starter for you!
+Hi! Welcome to ngStockholm! This repo contains our whole sample application.
 
 ## Requirements
 
-In order use this application starter and start learning you some Angular 2 and TypeScript you'll need to install [node and npm](https://nodejs.org/en/download/) (npm is installed automatically when you install node).
+In order use run this code examples you'll need to install [node and npm](https://nodejs.org/en/download/) (npm is installed automatically when you install node).
 
-Both *node* and *npm* will help you setup a nice development environment in which to start kicking butt with Angular 2.
-
-## Get Started with Angular 2
-
-Once you've installed node, you can start learning Angular 2 following these steps:
+## How to run the examples
 
 1. Clone the repository
 2. Run `npm install` to install all necessary packages
@@ -20,6 +14,21 @@ Once you've installed node, you can start learning Angular 2 following these ste
 4. Start writing Angular 2
 5. Profit
 
+Note that when you clone the repository you'll get the complete finalized code sample application. If you want to see a specific part just run `git tag` to see the available parts. You can use `git checkout <tagname>` to checkout any specific version. To go back ot the complete application run `git checkout master`.
+
+## Part I. Your First Component
+
+1. Your First Component (A single view with list of things)
+    1. Bootstrapping an angular 2 app
+    1. Your first component: A star wars people list component
+    1. Listing stuff: Basic template with `*ngFor`
+    1. Refactoring with services: Basic dependency injection to inject service
+    1. **EXERCISES**
+        1. List people
+
+
 ## Useful References
 
+* [Barbarian Meets Coding Angular 2 Wiki](http://www.barbarianmeetscoding.com/wiki/angular-2/)
+* [Angular 2 docs](https://angular.io/)
 * Check [John Papa's Angular 2 First Look Course](https://app.pluralsight.com/library/courses/angular-2-first-look/table-of-contents) and [Live Code Samples](jpapa.me/a2firstlook)
