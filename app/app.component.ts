@@ -3,6 +3,8 @@ import { Component } from 'angular2/core';
 // ROUTER_DIRECTIVES => let's you use router directives like router-outlet
 // ROUTER_PROVIDERS => let's you inject router services like
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
+// HTTP_PROVIDERS =. let's you inject http service
+import { HTTP_PROVIDERS } from 'angular2/http';
 import { PeopleComponent} from './people/people.component';
 import { PersonDetailsComponent } from './people/person-details.component';
 import { StarWarsService } from './services/starwars.service';
@@ -16,7 +18,7 @@ import { StarWarsService } from './services/starwars.service';
   `,
   styleUrls: ['app/app.component.css'],
   directives: [PeopleComponent, ROUTER_DIRECTIVES],
-  providers: [StarWarsService, ROUTER_PROVIDERS]
+  providers: [StarWarsService, ROUTER_PROVIDERS, HTTP_PROVIDERS]
 })
 // Route config let's you map routes to components
 @RouteConfig([

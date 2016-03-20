@@ -1,5 +1,6 @@
   <!-- new syntax for ng-if -->
   <section *ngIf="person">
+  <section>
     <h2>You selected: {{person.name}}</h2>
     <h3>Description</h3>
     <p>
@@ -31,7 +32,12 @@
         </select>
       </div>
       <button type="submit" [disabled]="!personForm.form.valid">Save</button>
+      <span [hidden]="!isSaving"> Saving... </span>
     </form>
   </section>
+</section>
+<section *ngIf="!person">
+  Loading...
+</section>
 
   <button (click)="gotoPeoplesList()">Back to peoples list</button>

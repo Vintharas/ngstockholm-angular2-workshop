@@ -1,32 +1,50 @@
 import { Injectable } from 'angular2/core';
 import { Http, Response } from 'angular2/http';
+import { Observable } from 'rxjs/Rx';
 import 'rxjs/Rx';
 
 import { Person } from '../people/person';
 
-const PEOPLE : Person[] = [
-      {id: 1, name: 'Luke Skywalker', height: 177, weight: 70, profession: ''},
-      {id: 2, name: 'Darth Vader', height: 200, weight: 100, profession: ''},
-      {id: 3, name: 'Han Solo', height: 185, weight: 85, profession: ''},
-    ];
-
 @Injectable()
 export class StarWarsService{
+  private baseUrl: string = 'http://swapi.co/api';
 
-  getAll() : Person[] {
-    return PEOPLE.map(p => this.clone(p));
-  }
-  get(id: number) : Person {
-    return this.clone(PEOPLE.find(p => p.id === id));
-  }
-  save(person: Person){
-    let originalPerson = PEOPLE.find(p => p.id === person.id);
-    if (originalPerson) Object.assign(originalPerson, person);
-    // saved muahahaha
-  }
+  constructor(private http : Http){}
 
-  private clone(object: any){
-    // hack
-    return JSON.parse(JSON.stringify(object));
+  getAllPeople(): Observable<Person[]>{
+    let people$ = this.http
+      .get(`${this.baseUrl}/people`)
+      .map(mapPersons);
+      return people$;
   }
+  getPerson(id: number): Observable<Person> {
+    let person$ = this.http
+      .get(`${this.baseUrl}/people/${id}`)
+      .map(mapPerson);
+      return person$;
+  }
+  savePerson(person: Person) : Observable<Response>{
+    return this.http
+      .post(`${this.baseUrl}/people/${person.id}`, JSON.stringify(person));
+  }
+}
+
+function mapPersons(response:Response): Person[]{
+   return response.json().results.map(toPerson)
+}
+
+function mapPerson(response:Response): Person{
+   return toPerson(response.json());
+}
+
+function toPerson(r:any): Person{
+  let person = <Person>({
+    id: <number>Number.parseInt(r.url.replace('http://swapi.co/api/people/','').replace('/','')),
+    url: <string>r.url,
+    name: <string>r.name,
+    weight: <number>r.mass,
+    height: <number>r.height,
+  });
+  console.log('Parsed person:', person);
+  return person;
 }

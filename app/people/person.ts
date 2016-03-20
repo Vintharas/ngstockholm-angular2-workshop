@@ -1,5 +1,6 @@
 export interface Person {
-  id: number;
+  id?: number;
+  url?: string;
   name: string;
   height: number;
   weight: number;

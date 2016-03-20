@@ -62,6 +62,19 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. **EXERCISES**
         1. Update person details so you can edit properties
 
+## Part VI. Async: Updating our service to get REAL data!
+
+1. Update service to get real data from an API
+  1. Use angular 2 http service to get people
+  1. Use http service to get a single person
+  1. Use http service to save person (the API doesn't allow it but we can do an as-if)
+  1. **EXERCISES**
+      1. Update star wars service to get real data: get people, get person and save person
+
+## Part VII. Styles!
+## Part VIII. Bonus!!!!
+
+
 ## Useful References
 
 * [Barbarian Meets Coding Angular 2 Wiki](http://www.barbarianmeetscoding.com/wiki/angular-2/)

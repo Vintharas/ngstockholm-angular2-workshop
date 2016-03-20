@@ -24,7 +24,10 @@ export class PeopleComponent implements OnInit{
   constructor(private starWarsService : StarWarsService){ }
 
   ngOnInit(){
-    this.people = this.starWarsService.getAll();
+    //this.people = this.starWarsService.getAll();
+    this.starWarsService
+      .getAllPeople()
+      .subscribe(p => this.people = p)
   }
 
   selectPerson(person: Person){
