@@ -45,6 +45,15 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. **EXERCISES**
         1. Create Person Details component and show person information when you click on a person in the list
 
+## Part IV. Routing: Navigating between Master and Detail
+
+1. Instead of showing both at once, we'll enable routing between master and detail
+    1. Setup these routes for your app
+        1. Default route: people list
+        2. Person details route with `id` as parameter
+    1. **EXERCISES**
+        1. Setup a master/detail routing
+
 ## Useful References
 
 * [Barbarian Meets Coding Angular 2 Wiki](http://www.barbarianmeetscoding.com/wiki/angular-2/)

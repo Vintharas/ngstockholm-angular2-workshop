@@ -1,5 +1,6 @@
-export interface Person{
-  name : string;
+export interface Person {
+  id: number;
+  name: string;
   height: number;
   weight: number;
 }

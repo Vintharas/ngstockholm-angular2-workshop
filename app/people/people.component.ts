@@ -1,19 +1,20 @@
 import { Component, OnInit } from 'angular2/core';
+import { ROUTER_DIRECTIVES } from 'angular2/router';
+
 import { Person } from './person';
 import { PersonDetailsComponent } from './person-details.component';
 import { StarWarsService } from '../services/starwars.service';
 
 @Component({
   selector: 'people-list',
-  directives: [PersonDetailsComponent],
+  directives: [PersonDetailsComponent, ROUTER_DIRECTIVES],
   template: `
   <!-- this is the new syntax for ng-repeat -->
   <ul *ngFor="#person of people">
     <li>
-      <a href="#" (click)="selectPerson(person)">{{person.name}}</a>
+      <a href="#" [routerLink]="['Person Details', {id: person.id}]">{{person.name}}</a>
     </li>
   </ul>
-  <person-details [person]="selectedPerson"></person-details>
   `
 })
 export class PeopleComponent implements OnInit{
@@ -29,5 +30,4 @@ export class PeopleComponent implements OnInit{
   selectPerson(person: Person){
     this.selectedPerson = person;
   }
-
 }
