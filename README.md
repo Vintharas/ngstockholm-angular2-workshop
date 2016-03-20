@@ -54,6 +54,14 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. **EXERCISES**
         1. Setup a master/detail routing
 
+## Part V. Forms and Validation
+
+1. Improve your person details so you can edit properties
+    1. Forms and two-way data binding
+    1. Validation
+    1. **EXERCISES**
+        1. Update person details so you can edit properties
+
 ## Useful References
 
 * [Barbarian Meets Coding Angular 2 Wiki](http://www.barbarianmeetscoding.com/wiki/angular-2/)

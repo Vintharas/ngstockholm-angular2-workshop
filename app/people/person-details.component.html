@@ -1,0 +1,37 @@
+  <!-- new syntax for ng-if -->
+  <section *ngIf="person">
+    <h2>You selected: {{person.name}}</h2>
+    <h3>Description</h3>
+    <p>
+      {{person.name}} weights {{person.weight}} and is {{person.height}} tall.
+    </p>
+  </section>
+  <section>
+    <form (ngSubmit)="savePersonDetails()" #personForm="ngForm">
+      <div>
+        <label for="name">Name: </label>
+        <!-- [(ngModel)] let's you do two-way data binding -->
+        <input [(ngModel)]="person.name" required ngControl="name" #name="ngForm">
+        <div [hidden]="name.valid || name.pristine" class="error">
+           Name is required
+        </div>
+      </div>
+      <div>
+        <label for="weight">Weight: </label>
+        <input [(ngModel)]="person.weight" ngControl="weight">
+      </div>
+      <div>
+        <label for="height">Height: </label>
+        <input [(ngModel)]="person.height" ngControl="height">
+      </div>
+      <div>
+        <label for="profession">Profession:</label>
+        <select>
+          <option *ngFor="#profession of professions" [value]="profession">{{profession}}</option>
+        </select>
+      </div>
+      <button type="submit" [disabled]="!personForm.form.valid">Save</button>
+    </form>
+  </section>
+
+  <button (click)="gotoPeoplesList()">Back to peoples list</button>
