@@ -1,5 +1,6 @@
-import { Component } from 'angular2/core';
+import { Component, OnInit } from 'angular2/core';
 import { Person } from './person';
+import { StarWarsService } from '../services/starwars.service';
 
 @Component({
   selector: 'people-list',
@@ -12,11 +13,12 @@ import { Person } from './person';
   </ul>
   `
 })
-export class PeopleComponent{
-  people: Person[] = [
-    {name: 'Luke Skywalker', height: 177, weight: 70},
-    {name: 'Darth Vader', height: 200, weight: 100},
-    {name: 'Han Solo', height: 185, weight: 85},
-  ];
+export class PeopleComponent implements OnInit{
+  people: Person[] = [];
+  constructor(private starWarsService : StarWarsService){ }
+
+  ngOnInit(){
+    this.people = this.starWarsService.getAll();
+  }
 
 }

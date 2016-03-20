@@ -1,5 +1,6 @@
 import { Component } from 'angular2/core';
 import { PeopleComponent } from './people/people.component';
+import { StarWarsService } from './services/starwars.service';
 
 @Component({
   selector: 'my-app',
@@ -8,7 +9,8 @@ import { PeopleComponent } from './people/people.component';
   <people-list></people-list>
   `,
   styleUrls: ['app/app.component.css'],
-  directives: [PeopleComponent]
+  directives: [PeopleComponent],
+  providers: [StarWarsService]
 })
 export class AppComponent {
   title:string = 'Star Wars Peoplez!';

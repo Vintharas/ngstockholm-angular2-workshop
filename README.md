@@ -22,9 +22,17 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. Bootstrapping an angular 2 app
     1. Your first component: A star wars people list component
     1. Listing stuff: Basic template with `*ngFor`
-    1. Refactoring with services: Basic dependency injection to inject service
     1. **EXERCISES**
         1. List people
+
+## Part II. Extracting Responsibilities into Services
+
+1. Refactor your people retrieving into a service
+    1. Create a new service that wraps retrieving star wars people
+    1. Use service in your component
+    1. Register service provider in your application
+    1. **EXERCISES**
+        1. Create star wars service
 
 
 ## Useful References
