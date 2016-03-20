@@ -23,7 +23,7 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. Your first component: A star wars people list component
     1. Listing stuff: Basic template with `*ngFor`
     1. **EXERCISES**
-        1. List people
+        1. Create People component and List people
 
 ## Part II. Extracting Responsibilities into Services
 
@@ -34,6 +34,16 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. **EXERCISES**
         1. Create star wars service
 
+## Part III. Your Second Component. Learn more templat-y stuff
+
+1. Create a second component for person details
+    1. When you click on a person in the list you'll show person details
+        1. event bindings
+        1. interpolation
+    1. Create a person details component to encapsulate person details
+        1. property bindings
+    1. **EXERCISES**
+        1. Create Person Details component and show person information when you click on a person in the list
 
 ## Useful References
 
