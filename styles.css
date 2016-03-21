@@ -1,1 +1,64 @@
 /* many styles */
+@font-face {
+  font-family: "StarJedi";
+  src: url("fonts/starjedi.ttf") format('truetype');
+}
+
+body{
+  background-color: #111;
+  color: white;
+}
+
+/* type */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "StarJedi", Arial, sans-serif;
+  color: #F3DC18;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+h2{
+  font-size: 1.5em;
+}
+h3{
+  font-size: 1.3em;
+}
+
+
+/* forms */
+
+label,
+input,
+button{
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1.3em;
+  padding: 12px;
+}
+
+label {
+  display: inline-block;
+  min-width: 120px;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form > div {
+  margin: 6px;
+}
+
+button{
+  background-color: rgba(255, 235, 59, 0.73);
+  border: 0;
+  color: #5F560C;
+}
+
+button:hover{
+  background-color: rgba(255, 235, 59, 0.85);
+  transition: background-color 0.5s;
+}

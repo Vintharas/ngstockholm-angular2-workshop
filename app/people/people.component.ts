@@ -10,12 +10,13 @@ import { StarWarsService } from '../services/starwars.service';
   directives: [PersonDetailsComponent, ROUTER_DIRECTIVES],
   template: `
   <!-- this is the new syntax for ng-repeat -->
-  <ul *ngFor="#person of people">
-    <li>
+  <ul class="people">
+    <li *ngFor="#person of people" >
       <a href="#" [routerLink]="['Person Details', {id: person.id}]">{{person.name}}</a>
     </li>
   </ul>
-  `
+  `,
+  styleUrls: ['app/people/people.component.css']
 })
 export class PeopleComponent implements OnInit{
   people: Person[] = [];

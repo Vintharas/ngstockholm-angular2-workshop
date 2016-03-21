@@ -13,8 +13,10 @@ import { StarWarsService } from './services/starwars.service';
 @Component({
   selector: 'my-app',
   template: `
-  <h1>{{title}}</h1>
-  <router-outlet>
+  <section class="app">
+    <h1>{{title}}</h1>
+    <router-outlet></router-outlet>
+  </section>
   `,
   styleUrls: ['app/app.component.css'],
   directives: [PeopleComponent, ROUTER_DIRECTIVES],

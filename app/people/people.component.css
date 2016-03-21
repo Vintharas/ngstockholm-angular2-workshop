@@ -1,0 +1,29 @@
+.people{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 1.5em;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.people li{
+  background-color: rgba(255, 235, 59, 0.73);
+  text-align: center;
+  margin: 10px;
+  flex: 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.people li a {
+  padding: 24px;
+  color: white;
+  font-family: "star jedi";
+  text-decoration: none;
+}
+
+.people li a:hover {
+  background-color: rgba(255, 235, 59, 0.85);
+  transition: background-color .5s;
+}
