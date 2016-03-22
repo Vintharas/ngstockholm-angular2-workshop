@@ -73,16 +73,18 @@ Note that when you clone the repository you'll get the complete finalized code s
 
 ## Part VII. Styles!
 
-1. Add some styles!
-1. See how component based styles don't leak to the whole app!
+1. **EXERCISES**
+    1. Add some styles!
+    1. See how component based styles don't leak to the whole app!
 
 ## Part VIII. Bonus!!!!
 
-1. Add a app level navigation with the people you already have and **starships!!*
-1. Add a list of **starships**
-1. Add a detail when you click on a **starships**
-1. In the person detail display a list of the starships they own
-    1. When you click on the starship go to the starship detail view
+1. **EXERCISES**
+    1. Add a app level navigation with the people you already have and **starships!!*
+    1. Add a list of **starships**
+    1. Add a detail when you click on a **starships**
+    1. In the person detail display a list of the starships they own
+        1. When you click on the starship go to the starship detail view
 
 
 ## Useful References to Learn More
