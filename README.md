@@ -72,7 +72,17 @@ Note that when you clone the repository you'll get the complete finalized code s
       1. Update star wars service to get real data: get people, get person and save person
 
 ## Part VII. Styles!
+
+1. Add some styles!
+1. See how component based styles don't leak to the whole app!
+
 ## Part VIII. Bonus!!!!
+
+1. Add a app level navigation with the people you already have and **starships!!*
+1. Add a list of **starships**
+1. Add a detail when you click on a **starships**
+1. In the person detail display a list of the starships they own
+    1. When you click on the starship go to the starship detail view
 
 
 ## Useful References to Learn More
@@ -82,4 +92,12 @@ Note that when you clone the repository you'll get the complete finalized code s
 * [Angular 1 to Angular2 Quick References](https://angular.io/docs/ts/latest/cookbook/a1-a2-quick-reference.html)
 * [Barbarian Meets Coding Angular 2 Wiki](http://www.barbarianmeetscoding.com/wiki/angular-2/)
 * Check [John Papa's Angular 2 First Look Course](https://app.pluralsight.com/library/courses/angular-2-first-look/table-of-contents) and [Live Code Samples](jpapa.me/a2firstlook)
+
+## Web Services Info
+
+* [https://swapi.co](https://swapi.co)
+* To get all people: [http://swapi.co/api/people/](http://swapi.co/api/people/)
+* Schema of the json:  [http://swapi.co/api/people/schema](http://swapi.co/api/people/schema)
+* Documentation: [https://swapi.co/documentation](https://swapi.co/documentation)
+* Javascript wrapper of api: [https://github.com/cfjedimaster/SWAPI-Wrapper](https://github.com/cfjedimaster/SWAPI-Wrapper)
 
