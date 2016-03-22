@@ -75,8 +75,11 @@ Note that when you clone the repository you'll get the complete finalized code s
 ## Part VIII. Bonus!!!!
 
 
-## Useful References
+## Useful References to Learn More
 
+* [Angular 2 full docs](https://angular.io/)
+* [Angular2 Cheetsheet](https://angular.io/docs/ts/latest/guide/cheatsheet.html)
+* [Angular 1 to Angular2 Quick References](https://angular.io/docs/ts/latest/cookbook/a1-a2-quick-reference.html)
 * [Barbarian Meets Coding Angular 2 Wiki](http://www.barbarianmeetscoding.com/wiki/angular-2/)
-* [Angular 2 docs](https://angular.io/)
 * Check [John Papa's Angular 2 First Look Course](https://app.pluralsight.com/library/courses/angular-2-first-look/table-of-contents) and [Live Code Samples](jpapa.me/a2firstlook)
+
