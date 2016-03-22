@@ -6,6 +6,7 @@ npm-debug.log*
 # Generated code
 *.js
 *.js.map
+typings
 
 # Runtime data
 pids
