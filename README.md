@@ -25,6 +25,8 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. **EXERCISES**
         1. Create People component and List people
 
+[Detailed Solution Step by Step](http://www.barbarianmeetscoding.com/blog/2016/03/25/getting-started-with-angular-2-step-by-step-1-your-first-component/)
+
 ## Part II. Extracting Responsibilities into Services
 
 1. Refactor your people retrieving into a service
@@ -33,6 +35,8 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. Register service provider in your application
     1. **EXERCISES**
         1. Create star wars service
+
+[Detailed Solution Step by Step](http://www.barbarianmeetscoding.com/blog/2016/03/26/getting-started-with-angular-2-step-by-step-2-refactoring-to-services/)
 
 ## Part III. Your Second Component. Learn more templat-y stuff
 
@@ -45,6 +49,8 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. **EXERCISES**
         1. Create Person Details component and show person information when you click on a person in the list
 
+[Detailed Solution Step by Step](http://www.barbarianmeetscoding.com/blog/2016/03/27/getting-started-with-angular-2-step-by-step-3-your-second-component-and-angular-2-data-binding/)
+
 ## Part IV. Routing: Navigating between Master and Detail
 
 1. Instead of showing both at once, we'll enable routing between master and detail
@@ -54,6 +60,8 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. **EXERCISES**
         1. Setup a master/detail routing
 
+[Detailed Solution Step by Step](http://www.barbarianmeetscoding.com/blog/2016/03/28/getting-started-with-angular-2-step-by-step-4-routing/)
+
 ## Part V. Forms and Validation
 
 1. Improve your person details so you can edit properties
@@ -61,6 +69,8 @@ Note that when you clone the repository you'll get the complete finalized code s
     1. Validation
     1. **EXERCISES**
         1. Update person details so you can edit properties
+
+[Detailed Solution Step by Step](http://www.barbarianmeetscoding.com/blog/2016/03/29/getting-started-with-angular-2-step-by-step-5-forms-and-validation/)
 
 ## Part VI. Async: Updating our service to get REAL data!
 
@@ -80,7 +90,7 @@ Note that when you clone the repository you'll get the complete finalized code s
 ## Part VIII. Bonus!!!!
 
 1. **EXERCISES**
-    1. Add a app level navigation with the people you already have and **starships!!*
+    1. Add a app level navigation with the people you already have and **starships!!**
     1. Add a list of **starships**
     1. Add a detail when you click on a **starships**
     1. In the person detail display a list of the starships they own
@@ -89,6 +99,7 @@ Note that when you clone the repository you'll get the complete finalized code s
 
 ## Useful References to Learn More
 
+* [Getting Started with Angular 2 Step by Step](http://www.barbarianmeetscoding.com/blog/2016/03/25/getting-started-with-angular-2-step-by-step-1-your-first-component/)
 * [Angular 2 full docs](https://angular.io/)
 * [Angular2 Cheetsheet](https://angular.io/docs/ts/latest/guide/cheatsheet.html)
 * [Angular 1 to Angular2 Quick References](https://angular.io/docs/ts/latest/cookbook/a1-a2-quick-reference.html)
