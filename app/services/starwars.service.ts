@@ -39,11 +39,11 @@ function mapPerson(response:Response): Person{
 
 function toPerson(r:any): Person{
   let person = <Person>({
-    id: <number>Number.parseInt(r.url.replace('http://swapi.co/api/people/','').replace('/','')),
-    url: <string>r.url,
-    name: <string>r.name,
-    weight: <number>r.mass,
-    height: <number>r.height,
+    id: parseInt(r.url.replace('http://swapi.co/api/people/','').replace('/','')),
+    url: r.url,
+    name: r.name,
+    weight: r.mass,
+    height: r.height,
   });
   console.log('Parsed person:', person);
   return person;
